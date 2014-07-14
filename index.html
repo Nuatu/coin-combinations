@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Coin Combinations</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Coin Combinations</h1>
+
+      <h3>Enter any number between 0 and 99, and this app will tell you the corresponding amount of quarters, dimes, nickels, and pennies.</h3>
+
+      <form id="coin">
+        <div class"form-group">
+            <label for="input"></label>
+            <input id="input" type="text">
+            <br><br>
+            <button type="submit" id="btn">Click here!</button>
+            <br>
+        </div>
+      </form>
+
+      <br>
+      <div class="output-area">
+        <p>Least Change: <span id="least"></span></p>
+        <br>
+
+        <p>Randomized Change: <span id="random"></span></p>
+      </div>
+    </div>
+  </body>
+</html>

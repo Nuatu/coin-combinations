@@ -3,6 +3,7 @@ var result;
 
 var coinCombinations = function(input){
   // return least(input);
+console.log(least + randomized);
 return least(input) + randomized(input);
 };
 
@@ -84,7 +85,7 @@ $(document).ready(function() {
     $('#least').empty();
     $('#random').empty();
     var coinInput = parseInt($('input#input').val());
-    var result = coinCombinations(coinInput);
+    var result = coinCombinations(input);
 
     $('#least').append(result.slice(0,45));
     $('.output-area').show();

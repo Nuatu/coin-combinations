@@ -1,9 +1,20 @@
-// var result, leftover, quarters, dimes, nickels, pennies;
-var result;
+$(document).ready(function() {
+  $('form#coin').submit(function(event) {
+    $('#least').empty();
+    $('#random').empty();
+    var coinInput = parseInt($('input#input').val());
+    var result = coinCombinations(coinInput);
+
+    $('#least').append(result.slice(0,45));
+    $('.output-area').show();
+
+    $('#random').append(result.slice(45));
+    $('.output-area').show();
+    event.preventDefault();
+  });
+});
 
 var coinCombinations = function(input){
-  // return least(input);
-console.log(least + randomized);
 return least(input) + randomized(input);
 };
 
@@ -78,21 +89,4 @@ return  quarters  + " quarters, "     +
         nickels   + " nickels, and "  +
         pennies   + " pennies";
 };
-
-  
-$(document).ready(function() {
-  $('form#coin').submit(function(event) {
-    $('#least').empty();
-    $('#random').empty();
-    var coinInput = parseInt($('input#input').val());
-    var result = coinCombinations(input);
-
-    $('#least').append(result.slice(0,45));
-    $('.output-area').show();
-
-    $('#random').append(result.slice(-45));
-    $('.output-area').show();
-    event.preventDefault();
-  });
-});
 

@@ -1,3 +1,10 @@
 .output-area {
 	display: none;
+  font-size: 25px;
+  padding-top: 30px;
 }
+
+#least, #random {
+  font-size: 30px;
+}
+

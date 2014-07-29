@@ -4,7 +4,6 @@ $(document).ready(function() {
     $('#random').empty();
     var coinInput = parseInt($('input#input').val());
     var result = coinCombinations(coinInput);
-    // console.log(result);
 
     $('#least').append(result[0]);
     $('.output-area').show();
@@ -19,7 +18,6 @@ var coinCombinations = function(input){
   var leastOutput = least(input);
   var randomOutput = randomized(input);
   var output = [leastOutput, randomOutput];
-  // console.log(output);
   return output;
 };
 
@@ -56,7 +54,6 @@ var randomized = function(number) {
   nickels =  parseInt(leftover/5);
   leftover = leftover %5;
   pennies = leftover;
-  // console.log("first pass");
 
   quarters += parseInt(random2/25);
   leftover = random2 %25;
@@ -65,7 +62,6 @@ var randomized = function(number) {
   nickels +=  parseInt(leftover/5);
   leftover = leftover %5;
   pennies += leftover;
-  // console.log("second pass");
 
   quarters += parseInt(random3/25);
   leftover = random3 %25;
@@ -74,7 +70,6 @@ var randomized = function(number) {
   nickels +=  parseInt(leftover/5);
   leftover = leftover %5;
   pennies += leftover;
-  // console.log("third pass");
 
   quarters += parseInt(reducedNumber3/25);
   leftover = reducedNumber3 %25;
@@ -83,7 +78,6 @@ var randomized = function(number) {
   nickels +=  parseInt(leftover/5);
   leftover = leftover %5;
   pennies += leftover;
-  // console.log("fourth pass");
 
   return  quarters  + " quarters, "     +
           dimes     + " dimes, "        +

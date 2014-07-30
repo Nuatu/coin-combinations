@@ -1,9 +1,9 @@
 describe('LEAST coinCombinations', function(){
- 	it('returns proper qty of pennies', function(){
+  it('returns proper qty of pennies', function(){
     coinCombinations(1)[0].should.equal("0 quarters, 0 dimes, 0 nickels, and 1 pennies");
   });
 
-	it('returns proper qty of nickels', function(){
+  it('returns proper qty of nickels', function(){
     coinCombinations(5)[0].should.equal("0 quarters, 0 dimes, 1 nickels, and 0 pennies");
   });
 
@@ -11,7 +11,7 @@ describe('LEAST coinCombinations', function(){
     coinCombinations(10)[0].should.equal("0 quarters, 1 dimes, 0 nickels, and 0 pennies");
   });
 
-	it('returns proper qty of quarters', function(){
+  it('returns proper qty of quarters', function(){
     coinCombinations(25)[0].should.equal("1 quarters, 0 dimes, 0 nickels, and 0 pennies");
   });
 
